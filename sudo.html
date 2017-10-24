@@ -1,0 +1,54 @@
+https://newsapi.org/national-geographic-api
+
+
+
+
+Feed Goals:
+
+When the application first loads, it should display the loading container (see below on instructions to toggle this). When you successfully retrieve information from the default API, the app should hide the loader and replace the content of the #main container with that of the API. The DOM structure of each article must adhere to the .article structure.
+
+*** Goal 1 Sudo ***
+ while content making call to API add class .loader?
+
+
+
+When the user selects an article's title, the app should show the #popUp overlay. The content of the article must be inserted in the .container class inside #popUp. Make sure you remove the .loader class when toggling the article information in the pop up.
+
+*** Goal 2 Sudo ***
+on click class .container h1 show hidden  #popUp. 
+remove .loader class
+Fire API call and load into #popUp
+
+
+
+Change the link of the "Read more from source" button to that of the respective article.
+When the user selects a source from the dropdown menu on the header, replace the content of the page with articles from the newly selected source. Display the loading pop up when the user first selects the new source, and hide it on success.
+
+*** Goal 3 Sudo ***
+Make api call on page load.
+When displaying #popUp call add href assocaited URL through API
+
+Add an error message (either alert or a notification on the page) if the app cannot load from the selected feed.
+
+*** Goal 4 Sudo ***
+add an if else statement that covers if the response code is not 200
+
+
+Additional UI Interaction Goals:
+
+When the user clicks/taps the search icon, expand the input box. The best approach for this is to toggle the .active class for the #search container. If the search input box is already expanded, tapping the search icon again should close the input. Pressing the "Enter" key should also close the opened input box. See Bonus 2 for search filtering functionality.
+
+*** Goal 4 Sudo ***
+on click #search img toggle .active class 
+enter key may be on key stroke JS
+
+When the app is first loading and when the user selects a new feed to load from the dropdown, display the #popUp container with the .loader class. You can toggle the .hidden class from the container to display/hide the overlay container.
+
+*** Goal 5 Sudo ***
+sudo goal 1 + 2
+
+
+*** Goal 6 Sudo ***
+Add functionality to hide the pop-up when user selects the "X" button on the pop-up.
+Clicking/tapping the "Feedr" logo should display the main/default feed.
+
